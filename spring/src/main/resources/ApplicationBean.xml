@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+    <context:component-scan base-package="org.spring.User"/>
+    <bean id="bean1" class="org.spring.Bean.Bean1" scope="prototype"/>
+
+    <bean id="bean2" class="org.spring.Bean.Bean2Factory" factory-method="createBean2"/>
+
+    <bean id="bean3Factory" class="org.spring.Bean.Bean3Factory"/>
+    <bean id="bean3" factory-bean="bean3Factory" factory-method="createBean3"/>
+</beans>
