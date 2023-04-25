@@ -10,7 +10,7 @@ public class StudentTest {
         Student student = (Student) context.getBean("student");
         System.out.println(student);
 
-        // Destory
+        // Destroy
         AbstractApplicationContext abstractApplicationContext = (AbstractApplicationContext) context;
         abstractApplicationContext.registerShutdownHook();
     }
