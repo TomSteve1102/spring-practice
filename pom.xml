@@ -39,9 +39,15 @@
             <artifactId>spring-expression</artifactId>
             <version>5.2.20.RELEASE</version>
         </dependency>
+        <!--spring-tx-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>5.2.20.RELEASE</version>
+        </dependency>
         <dependency>
             <groupId>commons-logging</groupId>
-            <artifactId>commons-logging-adapters</artifactId>
+            <artifactId>commons-logging</artifactId>
             <version>1.1</version>
         </dependency>
         <dependency>
@@ -84,6 +90,11 @@
             <artifactId>junit</artifactId>
             <version>4.13.1</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>aopalliance</groupId>
+            <artifactId>aopalliance</artifactId>
+            <version>1.0</version>
         </dependency>
     </dependencies>
 
