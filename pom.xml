@@ -45,6 +45,12 @@
             <artifactId>spring-tx</artifactId>
             <version>5.2.20.RELEASE</version>
         </dependency>
+        <!--spring-jdbc-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>5.2.20.RELEASE</version>
+        </dependency>
         <dependency>
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
