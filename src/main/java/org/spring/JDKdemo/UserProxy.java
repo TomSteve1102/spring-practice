@@ -12,7 +12,7 @@ public class UserProxy implements InvocationHandler{
     public Object createProxy(@NotNull UserDAO userDAO) {
         this.userDAO = userDAO;
         ClassLoader classLoader = UserProxy.class.getClassLoader();
-        Class[] classes = userDAO.getClass().getInterfaces();
+        Class<?>[] classes = userDAO.getClass().getInterfaces();
         return Proxy.newProxyInstance(classLoader, classes, this);
     }
 

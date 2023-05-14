@@ -58,7 +58,7 @@ public class accountDaoImpl implements accountDao {
      *    inUser: 转入账户
      *    money: 转账金额
      */
-    @Transactional(propagation = Propagation.REQUIRED, isolation = Isolation.DEFAULT, readOnly = false)
+    @Transactional(propagation = Propagation.REQUIRED, isolation = Isolation.DEFAULT)
     @Override
     public void transfer(String outUser, String inUser, Double money) {
         // 转出账户减钱

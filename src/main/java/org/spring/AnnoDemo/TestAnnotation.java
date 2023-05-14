@@ -6,6 +6,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class TestAnnotation {
     public static void main(String[] args) {
+        test();
+    }
+
+    public static void test() {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationXMLDao.xml");
         userDao userDao = context.getBean("userDao", userDao.class);
         userDao.delete();
